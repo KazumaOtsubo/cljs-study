@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :dev-http {3333 "public"}
+
+ :builds
+ {:hello
+  {:target :browser
+   :modules {:main {:init-fn helloworld.hello/init}}}}}
